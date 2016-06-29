@@ -1,0 +1,71 @@
+<div class="row">
+  <div class="col-xs-12">
+  	<form id="J_QuestionForm">
+
+  		{{#each questionList}}
+  			<p>{{this}}</p>
+		  	<div class="radio-control">
+		  		<div class="radio">
+				  <label for="q{{add @index 1}}_1">
+				    <input type="radio" name="q{{add @index 1}}" id="q{{add @index 1}}_1" value="2">
+				    符合
+				  </label>
+				</div>
+				<div class="radio">
+				  <label for="q{{add @index 1}}_2">
+				    <input type="radio" name="q{{add @index 1}}" id="q{{add @index 1}}_2" value="1">
+				    比较符合
+				  </label>
+				</div>
+				<div class="radio">
+				  <label for="q{{add @index 1}}_3">
+				    <input type="radio" name="q{{add @index 1}}" id="q{{add @index 1}}_3" value="0">
+				    不能确定
+				  </label>
+				</div>
+				<div class="radio">
+				  <label for="q{{add @index 1}}_4">
+				    <input type="radio" name="q{{add @index 1}}" id="q{{add @index 1}}_4" value="-1">
+				    不太符合
+				  </label>
+				</div>
+				<div class="radio">
+				  <label for="q{{add @index 1}}_5">
+				    <input type="radio" name="q{{add @index 1}}" id="q{{add @index 1}}_5" value="-2">
+				    完全不符
+				  </label>
+				</div>
+		  	</div>
+  		{{/each}}
+  		
+
+	  	<input type="submit" class="btn btn-default" name="submit" value="提交">
+  	</form>
+  	<script type="text/html" id="J_Temp">
+  		<div class="alert-container">
+  			<p>
+  			<span>胆汁质:</span>
+  			<span>\{{danzhi}}</span>
+  			</p>
+  			<p>
+  			<span>多血质:</span>
+  			<span>\{{duoxue}}</span>
+  			</p>
+  			<p>
+  			<span>粘液质:</span>
+  			<span>\{{nianzhi}}</span>
+  			</p>
+  			<p>
+  			<span>抑郁质:</span>
+  			<span>\{{yiyu}}</span>
+  			</p>
+  		</div>
+  	</script>
+  </div>
+</div>
+
+
+
+
+
+
